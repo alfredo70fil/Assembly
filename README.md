@@ -61,4 +61,4 @@ compilador que realice determinadas tareas en el proceso de compilación. Son f�
 ## Ejecución de qemu
 ![](/Imagen/Ejecución.png)
 ![](/Imagen/Ejecución1.png)
-![](/Imagen/Hola-a.png)
+![](/Imagen/Hola.png)
