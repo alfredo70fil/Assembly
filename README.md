@@ -62,3 +62,21 @@ compilador que realice determinadas tareas en el proceso de compilación. Son f�
 ![](/Imagen/Ejecución.png)
 ![](/Imagen/Ejecución1.png)
 ![](/Imagen/Hola.png)
+
+# Capitulo 2
+
+## Modos de direccionamiento del ARM
+
+En la arquitectura ARM los accesos a memoria se hacen mediante instrucciones específicas ldr y str. El resto de instrucciones donde toman operandos desde registros o valores inmediatos, sin excepciones. En este caso la arquitectura nos fuerza a que trabajemos de un modo determinado: primero cargamos los registros desde memoria, luego procesamos el valor de estos registros con el amplio abanico de instrucciones del ARM, para finalmente volcar los resultados desde registros a memoria.
+
+## Tipos de datos
+
+- Tipos de datos básicos.
+En la siguiente tabla se recogen los diferentes tipos de datos básicos que podrán aparecer en los ejemplos, así como su
+tamaño y rango de representación.
+
+[](/Imagen/Tabla2.png)
+
+- Punteros.
+
+Un puntero siempre ocupa 32 bits y contiene una dirección de memoria. En ensamblador no tienen tanta utilidad como en C, ya que disponemos de registros de sobra y es más costoso acceder a las variables a través de los punteros que directamente. En este ejemplo acceder a la dirección de var1 nos cuesta 2 ldrs a través del puntero, mientras que directamente se puede hacer con uno sólo.
